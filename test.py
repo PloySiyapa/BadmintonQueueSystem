@@ -1,3 +1,6 @@
+# Author: Ethan Thongmanivong
+# date: January 29 2025
+# Purpose: Prove of concept waiting time estimation 
 import numpy as np
 import pandas as pd
 import scipy.stats as stats
@@ -28,9 +31,10 @@ num_courts = 3
 players_per_match = 4
 players_per_round = num_courts * players_per_match  # 12 players on court at once
 
+# enter the loop for the program
 while True:
-    user_input = input("\nEnter your queue position (or 'E' to exit): ").strip()
-    if user_input.upper() == 'E':
+    user_input = input("\nEnter your queue position (or 'Quit' to exit): ").strip()
+    if user_input.upper() == 'Quit':
         print("Exiting the program. Goodbye!")
         break
 
