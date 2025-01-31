@@ -1,5 +1,5 @@
-import numpy as np
-import scipy.stats as stats
+import numpy as np # type: ignore
+import scipy.stats as stats # type: ignore
 
 # Step 1: Inputs
 num_courts = 3  # Total number of courts
